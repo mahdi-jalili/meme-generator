@@ -28,7 +28,7 @@ export default function Text({ shapeProps, onSelect, isSelected, onChange }) {
                         y: e.target.y(),
                     });
                 }}
-                onTransformEnd={(e) => {
+                onTransform={(e) => {
                     const node = shapeRef.current;
                     const scaleX = node.scaleX();
                     const scaleY = node.scaleY();
