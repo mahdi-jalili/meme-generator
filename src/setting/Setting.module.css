@@ -1,5 +1,14 @@
 .wrapper {
     width: 30%;
     height: 100vh;
-    border-left: 1px solid red;
+    border-left: 1px solid black;
+}
+.wrapper header{
+    text-align: center;
+    padding: 10px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }

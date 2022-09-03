@@ -13,3 +13,7 @@ export default function Background({ shapeProps }) {
         ></ImageKonva>
     );
 }
+
+export function BackgroundSetting() {
+    return <div>Background</div>;
+}

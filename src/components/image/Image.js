@@ -62,3 +62,7 @@ export default function Image({ shapeProps, onSelect, isSelected, onChange }) {
         </>
     );
 }
+
+export function ImageSetting() {
+    return <div>Image</div>;
+}

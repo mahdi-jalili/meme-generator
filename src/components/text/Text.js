@@ -1,6 +1,8 @@
+import style from "./text.module.css";
+
 import { useEffect, useRef } from "react";
+
 import { Text as TextKonva, Transformer } from "react-konva";
-// import style from "./text.module.css";
 
 export default function Text({ shapeProps, onSelect, isSelected, onChange }) {
     const shapeRef = useRef();
@@ -57,5 +59,20 @@ export default function Text({ shapeProps, onSelect, isSelected, onChange }) {
                 ></Transformer>
             )}
         </>
+    );
+}
+
+export function TextSetting({ onChange, component }) {
+    const onCahange = (e) => {
+        var copyComponent = component;
+        copyComponent.text = e.target.value;
+        console.log(e);
+        onChange(copyComponent);
+    };
+
+    return (
+        <div className={style.wrapper}>
+            <input type="text" value={component.text} onChange={(e) => onCahange(e)}></input>
+        </div>
     );
 }
