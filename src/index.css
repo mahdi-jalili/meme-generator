@@ -18,6 +18,10 @@ code {
     monospace;
 }
 
+input {
+  font-family: Vazirmatn;
+}
+
 button {
   font-family: Vazirmatn;
   cursor: pointer;

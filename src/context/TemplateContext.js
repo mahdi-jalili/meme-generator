@@ -59,6 +59,118 @@ const templates = [
             },
         ],
     },
+    {
+        id: "4",
+        name: "Two-Buttons",
+        image: "https://imgflip.com/s/meme/Two-Buttons.jpg",
+        ratio: 0.66,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Two-Buttons.jpg",
+            },
+        ],
+    },
+    {
+        id: "5",
+        name: "Change-My-Mind",
+        image: "https://imgflip.com/s/meme/Change-My-Mind.jpg",
+        ratio: 1.335,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Change-My-Mind.jpg",
+            },
+        ],
+    },
+    {
+        id: "6",
+        name: "Left-Exit-12-Off-Ramp",
+        image: "https://imgflip.com/s/meme/Left-Exit-12-Off-Ramp.jpg",
+        ratio: 1.048,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Left-Exit-12-Off-Ramp.jpg",
+            },
+        ],
+    },
+    {
+        id: "7",
+        name: "Buff-Doge-vs-Cheems",
+        image: "https://imgflip.com/s/meme/Buff-Doge-vs-Cheems.png",
+        ratio: 1.3,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Buff-Doge-vs-Cheems.png",
+            },
+        ],
+    },
+    {
+        id: "8",
+        name: "Expanding-Brain",
+        image: "https://imgflip.com/s/meme/Expanding-Brain.jpg",
+        ratio: 0.712,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Expanding-Brain.jpg",
+            },
+        ],
+    },
+    {
+        id: "9",
+        name: "Monkey-Puppet",
+        image: "https://imgflip.com/s/meme/Monkey-Puppet.jpg",
+        ratio: 1,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Monkey-Puppet.jpg",
+            },
+        ],
+    },
+    {
+        id: "10",
+        name: "Sad-Pablo-Escobar",
+        image: "https://imgflip.com/s/meme/Sad-Pablo-Escobar.jpg",
+        ratio: 1,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Sad-Pablo-Escobar.jpg",
+            },
+        ],
+    },
+    {
+        id: "11",
+        name: "Anakin Padme 4 Panel",
+        image: "https://i.imgflip.com/5c7lwq.png",
+        ratio: 1,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://i.imgflip.com/5c7lwq.png",
+            },
+        ],
+    },
 ];
 
 export const TemplatesContext = createContext();

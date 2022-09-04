@@ -89,6 +89,8 @@ export function TextDefault({ onClick }) {
         fontStyle: "bold",
         fontFamily: "Vazirmatn",
         align: "right",
+        // stroke: "white",
+        // strokeWidth: 10,
         fill: "black",
         width: 180,
         height: 44,

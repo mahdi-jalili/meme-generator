@@ -20,11 +20,22 @@ export default function Editor() {
         }
     };
 
+    const canvasSize =
+        selectedTemplate.ratio <= 1
+            ? {
+                  width: (window.innerHeight - 40) * selectedTemplate.ratio,
+                  height: window.innerHeight - 40,
+              }
+            : {
+                  width: window.innerWidth / 2 - 40,
+                  height: (window.innerWidth / 2 - 40) / selectedTemplate.ratio,
+              };
+
     return (
         <div className={style.wrapper}>
             <Stage
-                width={(window.innerHeight - 40) * selectedTemplate.ratio}
-                height={window.innerHeight - 40}
+                width={canvasSize.width}
+                height={canvasSize.height}
                 onMouseDown={checkDeselect}
                 onTouchStart={checkDeselect}
                 className={`${style.stage} widget`}
@@ -33,9 +44,9 @@ export default function Editor() {
                     <Label></Label>
                     {components.map((component, index) => (
                         <component.component
-                            width={(window.innerHeight - 40) * selectedTemplate.ratio}
-                            height={window.innerHeight - 40}
                             key={`key-${component.id}`}
+                            width={canvasSize.width}
+                            height={canvasSize.height}
                             shapeProps={component}
                             isSelected={component.id === selectedId}
                             onSelect={() => {
