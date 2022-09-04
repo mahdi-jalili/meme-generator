@@ -69,8 +69,18 @@ export default function Image({ shapeProps, onSelect, isSelected, onChange }) {
     );
 }
 
-export function ImageSetting() {
-    return <div>Image</div>;
+export function ImageSetting({ onChange, component }) {
+    const onCahange = (e) => {
+        var copyComponent = component;
+        copyComponent.url = e.target.value;
+        onChange(copyComponent);
+    };
+
+    return (
+        <div className={`${style.setting} widget`}>
+            <input type="text" value={component.url} onChange={(e) => onCahange(e)}></input>
+        </div>
+    );
 }
 
 export function ImageDefault({ onClick }) {
@@ -85,7 +95,7 @@ export function ImageDefault({ onClick }) {
 
     return (
         <button
-            className={style.button}
+            className={`${style.button} widget`}
             onClick={() => {
                 onClick(def);
             }}

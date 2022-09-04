@@ -1,11 +1,11 @@
 /********************/
 
-.wrapper {
+.setting {
     width: 100%;
     margin-top: 20px;
 }
 
-.wrapper input {
+.setting input {
     width: 100%;
     padding: 10px;
     font-size: 18px;

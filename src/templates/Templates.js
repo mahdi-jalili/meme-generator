@@ -21,7 +21,7 @@ export default function Templates() {
             </header>
             <div className={style.list}>
                 {templates.map((t) => (
-                    <div onClick={() => changeTemplate(t)} className={style.item}>
+                    <div onClick={() => changeTemplate(t)} className={`${style.item} widget`}>
                         <img src={t.image} alt={t.name}></img>
                         <span>{t.name}</span>
                     </div>

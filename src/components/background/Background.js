@@ -18,7 +18,7 @@ export default function Background({ shapeProps, width, height, onSelect }) {
 }
 
 export function BackgroundSetting() {
-    return <div>Background</div>;
+    return <div className="widget">Background</div>;
 }
 
 export function BackgroundDefault({ onClick }) {
@@ -31,7 +31,7 @@ export function BackgroundDefault({ onClick }) {
 
     return (
         <button
-            className={style.button}
+            className={`${style.button} widget`}
             onClick={() => {
                 onClick(def);
             }}

@@ -23,17 +23,18 @@ export default function Editor() {
     return (
         <div className={style.wrapper}>
             <Stage
-                width={window.innerHeight * selectedTemplate.ratio}
-                height={window.innerHeight}
+                width={(window.innerHeight - 40) * selectedTemplate.ratio}
+                height={window.innerHeight - 40}
                 onMouseDown={checkDeselect}
                 onTouchStart={checkDeselect}
+                className={`${style.stage} widget`}
             >
                 <Layer>
                     <Label></Label>
                     {components.map((component, index) => (
                         <component.component
-                            width={window.innerHeight * selectedTemplate.ratio}
-                            height={window.innerHeight}
+                            width={(window.innerHeight - 40) * selectedTemplate.ratio}
+                            height={window.innerHeight - 40}
                             key={`key-${component.id}`}
                             shapeProps={component}
                             isSelected={component.id === selectedId}

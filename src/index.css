@@ -28,11 +28,19 @@ button:hover {
   opacity: 0.8;
 }
 
+.widget {
+  padding: 20px;
+  border-radius: var(--radius);
+  background-color: var(--widget);
+  box-shadow: var(--box-shadow);
+}
+
 :root {
-  --bg: #121212;
-  --widget: #424242;
-  --primary-text: white;
+  --bg: #f8f8f8;
+  --widget: #ffffff;
+  --primary-text: black;
   --radius: 14px;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
 }
 
 /* custom scrollbar */

@@ -68,12 +68,11 @@ export function TextSetting({ onChange, component }) {
     const onCahange = (e) => {
         var copyComponent = component;
         copyComponent.text = e.target.value;
-        console.log(e);
         onChange(copyComponent);
     };
 
     return (
-        <div className={style.wrapper}>
+        <div className={`${style.setting} widget`}>
             <input type="text" value={component.text} onChange={(e) => onCahange(e)}></input>
         </div>
     );
@@ -99,7 +98,7 @@ export function TextDefault({ onClick }) {
 
     return (
         <button
-            className={style.button}
+            className={`${style.button} widget`}
             onClick={() => {
                 onClick(def);
             }}
