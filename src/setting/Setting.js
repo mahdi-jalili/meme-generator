@@ -8,6 +8,7 @@ export default function Setting() {
     const templatesContext = useContext(TemplatesContext);
 
     const [components, setComponents] = templatesContext.components;
+    const componentList = templatesContext.componentList;
 
     return (
         <div className={style.wrapper}>
@@ -25,6 +26,15 @@ export default function Setting() {
                             setComponents(newComponents);
                         }}
                     ></component.componentSetting>
+                ))}
+            </div>
+            <div className={style.add}>
+                {componentList.map((component) => (
+                    <component.component
+                        onClick={(data) => {
+                            setComponents((prev) => [...prev, data]);
+                        }}
+                    ></component.component>
                 ))}
             </div>
         </div>

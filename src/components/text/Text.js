@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 
 import { Text as TextKonva, Transformer } from "react-konva";
 
+import { uid } from "uid";
+
 export default function Text({ shapeProps, onSelect, isSelected, onChange }) {
     const shapeRef = useRef();
     const trRef = useRef();
@@ -74,5 +76,36 @@ export function TextSetting({ onChange, component }) {
         <div className={style.wrapper}>
             <input type="text" value={component.text} onChange={(e) => onCahange(e)}></input>
         </div>
+    );
+}
+
+export function TextDefault({ onClick }) {
+    const def = {
+        id: uid(),
+        component: Text,
+        componentSetting: TextSetting,
+        text: "متن جدید",
+        fontSize: 42,
+        fontStyle: "bold",
+        fontFamily: "Vazirmatn",
+        align: "right",
+        // stroke: "white",
+        // strokeWidth: 1,
+        fill: "black",
+        width: 180,
+        height: 44,
+        x: 10,
+        y: 10,
+    };
+
+    return (
+        <button
+            className={style.button}
+            onClick={() => {
+                onClick(def);
+            }}
+        >
+            اضافه کردن متن
+        </button>
     );
 }

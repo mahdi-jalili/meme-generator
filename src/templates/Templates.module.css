@@ -2,33 +2,33 @@
     width: 20%;
     height: 100vh;
     overflow-y: scroll;
-    border-right: 1px solid black;
 }
 .wrapper header{
     text-align: center;
-    padding: 10px;
 }
 .list {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px;
 }
 .item {
     cursor: pointer;
-    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid black;
+    background-color: var(--widget);
+    border-radius: var(--radius);
 }
 .item:nth-child(1) {
     margin-top: 0;
 }
 .item img {
     width: 100%;
+    border-radius: var(--radius);
 }
 .item span {
     margin-top: 20px;

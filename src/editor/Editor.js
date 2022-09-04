@@ -8,12 +8,10 @@ import { TemplatesContext } from "../context/TemplateContext";
 
 export default function Editor() {
     const templatesContext = useContext(TemplatesContext);
-    const [components, setComponents] = templatesContext.components;
-    const [selectedId, setSelectedId] = useState();
 
-    useEffect(() => {
-        console.log(components);
-    }, [components]);
+    const [components, setComponents] = templatesContext.components;
+    const [selectedTemplate] = templatesContext.selectedTemplate;
+    const [selectedId, setSelectedId] = useState();
 
     const checkDeselect = (e) => {
         const clickedOnEmpty = e.target === e.target.getStage();
@@ -25,7 +23,7 @@ export default function Editor() {
     return (
         <div className={style.wrapper}>
             <Stage
-                width={window.innerWidth / 2}
+                width={window.innerHeight * selectedTemplate.ratio}
                 height={window.innerHeight}
                 onMouseDown={checkDeselect}
                 onTouchStart={checkDeselect}
@@ -34,7 +32,9 @@ export default function Editor() {
                     <Label></Label>
                     {components.map((component, index) => (
                         <component.component
-                            key={`key-${index}`}
+                            width={window.innerHeight * selectedTemplate.ratio}
+                            height={window.innerHeight}
+                            key={`key-${component.id}`}
                             shapeProps={component}
                             isSelected={component.id === selectedId}
                             onSelect={() => {

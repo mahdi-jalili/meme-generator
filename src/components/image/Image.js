@@ -1,6 +1,12 @@
+import style from "./Image.module.css";
+
 import { useEffect, useRef } from "react";
+
 import { Image as ImageKonva, Transformer } from "react-konva";
+
 import useImage from "use-image";
+
+import { uid } from "uid";
 
 export default function Image({ shapeProps, onSelect, isSelected, onChange }) {
     const [image] = useImage(shapeProps.url);
@@ -65,4 +71,26 @@ export default function Image({ shapeProps, onSelect, isSelected, onChange }) {
 
 export function ImageSetting() {
     return <div>Image</div>;
+}
+
+export function ImageDefault({ onClick }) {
+    const def = {
+        id: uid(),
+        component: Image,
+        componentSetting: ImageSetting,
+        url: "https://konvajs.github.io/assets/yoda.jpg",
+        x: 50,
+        y: 50,
+    };
+
+    return (
+        <button
+            className={style.button}
+            onClick={() => {
+                onClick(def);
+            }}
+        >
+            اضافه کردن عکس
+        </button>
+    );
 }
