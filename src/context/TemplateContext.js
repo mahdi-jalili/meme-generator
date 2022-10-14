@@ -19,20 +19,6 @@ const componentList = [
 const templates = [
     {
         id: "1",
-        name: "Batman-Slapping-Robin",
-        image: "https://imgflip.com/s/meme/Batman-Slapping-Robin.jpg",
-        ratio: 1,
-        components: [
-            {
-                id: "1",
-                component: Background,
-                componentSetting: BackgroundSetting,
-                url: "https://imgflip.com/s/meme/Batman-Slapping-Robin.jpg",
-            },
-        ],
-    },
-    {
-        id: "2",
         name: "Drake-Hotline-Bling",
         image: "https://imgflip.com/s/meme/Drake-Hotline-Bling.jpg",
         ratio: 1,
@@ -42,6 +28,20 @@ const templates = [
                 component: Background,
                 componentSetting: BackgroundSetting,
                 url: "https://imgflip.com/s/meme/Drake-Hotline-Bling.jpg",
+            },
+        ],
+    },
+    {
+        id: "2",
+        name: "Batman-Slapping-Robin",
+        image: "https://imgflip.com/s/meme/Batman-Slapping-Robin.jpg",
+        ratio: 1,
+        components: [
+            {
+                id: "1",
+                component: Background,
+                componentSetting: BackgroundSetting,
+                url: "https://imgflip.com/s/meme/Batman-Slapping-Robin.jpg",
             },
         ],
     },
