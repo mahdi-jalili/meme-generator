@@ -66,7 +66,6 @@ export default function Text({ shapeProps, onSelect, isSelected, onChange }) {
 
 export function TextSetting({ onChange, component }) {
     const onInputsChange = (e) => {
-        console.log(component);
         var copyComponent = component;
         copyComponent[e.target.attributes.name.value] = e.target.value;
         onChange(copyComponent);

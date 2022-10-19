@@ -70,15 +70,27 @@ export default function Image({ shapeProps, onSelect, isSelected, onChange }) {
 }
 
 export function ImageSetting({ onChange, component }) {
-    const onCahange = (e) => {
+    const onInputsChange = (e) => {
         var copyComponent = component;
-        copyComponent.url = e.target.value;
+        copyComponent[e.target.attributes.name.value] = e.target.value;
         onChange(copyComponent);
     };
 
     return (
         <div className={`${style.setting} widget`}>
-            <input type="text" value={component.url} onChange={(e) => onCahange(e)}></input>
+            <div>
+                <label className="label">لینک عکس:</label>
+                <input
+                    style={{
+                        direction: "ltr",
+                    }}
+                    name="url"
+                    type="text"
+                    value={component.url}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
         </div>
     );
 }

@@ -42,6 +42,10 @@ button:hover {
 :root {
   --bg: #FAFBFC;
   --widget: #ffffff;
+
+  --white: #ffffff;  
+  --primary: #70A0AF;
+
   --primary-text: black;
   --line: #c2c2c2;
   --radius: 12px;
