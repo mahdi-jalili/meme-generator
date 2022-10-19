@@ -3,6 +3,7 @@
     height: 100vh;
     padding: 0px 20px;
     overflow-y: scroll;
+    border-left: 2px dashed var(--line);
 }
 .wrapper header{
     text-align: center;

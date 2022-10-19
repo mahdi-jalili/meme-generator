@@ -40,11 +40,27 @@ button:hover {
 }
 
 :root {
-  --bg: #f8f8f8;
+  --bg: #FAFBFC;
   --widget: #ffffff;
   --primary-text: black;
-  --radius: 14px;
-  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+  --line: #c2c2c2;
+  --radius: 12px;
+  --box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 0px;;
+}
+
+.label {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.input {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 16px;
+
 }
 
 /* custom scrollbar */
@@ -57,7 +73,7 @@ button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--widget);
+  background-color: var(--line);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;

@@ -2,6 +2,7 @@
     width: 20%;
     height: 100vh;
     overflow-y: scroll;
+    border-right: 2px dashed var(--line);
 }
 .wrapper header{
     text-align: center;

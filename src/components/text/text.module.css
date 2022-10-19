@@ -4,12 +4,11 @@
     width: 100%;
     margin-top: 20px;
 }
-
-.setting input {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
+.setting > div {
+    margin-top: 10px;
 }
+
+
 
 /*************************/
 

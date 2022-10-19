@@ -188,9 +188,9 @@ export const TemplatesProvider = (props) => {
         console.log(templatesContext.selectedTemplate[0]);
     }, [templatesContext.selectedTemplate[0]]);
 
-    // useEffect(() => {
-    //     console.log("components updated", templatesContext.components[0]);
-    // }, [templatesContext.components[0]]);
+    useEffect(() => {
+        console.log("components updated", templatesContext.components[0]);
+    }, [templatesContext.components[0]]);
 
     return <TemplatesContext.Provider value={templatesContext}>{props.children}</TemplatesContext.Provider>;
 };

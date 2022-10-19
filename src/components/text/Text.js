@@ -65,15 +65,45 @@ export default function Text({ shapeProps, onSelect, isSelected, onChange }) {
 }
 
 export function TextSetting({ onChange, component }) {
-    const onCahange = (e) => {
+    const onInputsChange = (e) => {
+        console.log(component);
         var copyComponent = component;
-        copyComponent.text = e.target.value;
+        copyComponent[e.target.attributes.name.value] = e.target.value;
         onChange(copyComponent);
     };
 
     return (
         <div className={`${style.setting} widget`}>
-            <input type="text" value={component.text} onChange={(e) => onCahange(e)}></input>
+            <div>
+                <label className="label">متن:</label>
+                <input
+                    name="text"
+                    type="text"
+                    value={component.text}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
+            <div>
+                <label className="label">سایز متن:</label>
+                <input
+                    name="fontSize"
+                    type="number"
+                    value={component.fontSize}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
+            <div>
+                <label className="label">رنگ:</label>
+                <input
+                    name="fill"
+                    type="text"
+                    value={component.fill}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
         </div>
     );
 }
