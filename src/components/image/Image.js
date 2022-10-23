@@ -91,6 +91,26 @@ export function ImageSetting({ onChange, component }) {
                     className="input"
                 ></input>
             </div>
+            <div>
+                <label className="label">طول:</label>
+                <input
+                    name="width"
+                    type="number"
+                    value={component.width}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
+            <div>
+                <label className="label">عرض:</label>
+                <input
+                    name="height"
+                    type="number"
+                    value={component.height}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
         </div>
     );
 }

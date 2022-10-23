@@ -18,7 +18,7 @@ code {
     monospace;
 }
 
-input {
+input, option, select {
   font-family: Vazirmatn;
 }
 
@@ -64,7 +64,6 @@ button:hover {
   border-radius: var(--radius);
   outline: none;
   font-size: 16px;
-
 }
 
 /* custom scrollbar */

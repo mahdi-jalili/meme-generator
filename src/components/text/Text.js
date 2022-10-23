@@ -94,11 +94,50 @@ export function TextSetting({ onChange, component }) {
                 ></input>
             </div>
             <div>
+                <label className="label">ارتفاع خط:</label>
+                <input
+                    name="lineHeight"
+                    type="number"
+                    value={component.lineHeight}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
+            <div>
                 <label className="label">رنگ:</label>
                 <input
                     name="fill"
                     type="text"
+                    placeholder="کد رنگی یا اسم رنگ به لاتین"
                     value={component.fill}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
+            <div>
+                <label className="label">چینش:</label>
+                <select name="align" value={component.align} onChange={(e) => onInputsChange(e)} className="input">
+                    <option value="right">راست چین</option>
+                    <option value="left">چپ چین</option>
+                    <option value="center">وسط چین</option>
+                </select>
+            </div>
+            <div>
+                <label className="label">طول:</label>
+                <input
+                    name="width"
+                    type="number"
+                    value={component.width}
+                    onChange={(e) => onInputsChange(e)}
+                    className="input"
+                ></input>
+            </div>
+            <div>
+                <label className="label">عرض:</label>
+                <input
+                    name="height"
+                    type="number"
+                    value={component.height}
                     onChange={(e) => onInputsChange(e)}
                     className="input"
                 ></input>
