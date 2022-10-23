@@ -16,7 +16,7 @@
 
 .add {
     border-top: 2px dashed var(--line);
-    margin-top: 25px;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
 }

@@ -18,7 +18,7 @@ export default function Background({ shapeProps, width, height, onSelect }) {
 }
 
 export function BackgroundSetting() {
-    return <div className="widget">Background</div>;
+    return <></>;
 }
 
 export function BackgroundDefault({ onClick }) {

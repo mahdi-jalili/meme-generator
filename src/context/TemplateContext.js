@@ -19,7 +19,7 @@ const componentList = [
 const templates = [
     {
         id: "1",
-        name: "Drake-Hotline-Bling",
+        name: "دریک",
         image: "https://imgflip.com/s/meme/Drake-Hotline-Bling.jpg",
         ratio: 1,
         components: [
@@ -33,7 +33,7 @@ const templates = [
     },
     {
         id: "2",
-        name: "Batman-Slapping-Robin",
+        name: "چک بتمن",
         image: "https://imgflip.com/s/meme/Batman-Slapping-Robin.jpg",
         ratio: 1,
         components: [
@@ -47,7 +47,7 @@ const templates = [
     },
     {
         id: "3",
-        name: "Hide-the-Pain-Harold.jpg",
+        name: "درد پنهان",
         image: "https://imgflip.com/s/meme/Hide-the-Pain-Harold.jpg",
         ratio: 0.8,
         components: [
@@ -61,7 +61,7 @@ const templates = [
     },
     {
         id: "4",
-        name: "Two-Buttons",
+        name: "دو دکمه",
         image: "https://imgflip.com/s/meme/Two-Buttons.jpg",
         ratio: 0.66,
         components: [
@@ -75,7 +75,7 @@ const templates = [
     },
     {
         id: "5",
-        name: "Change-My-Mind",
+        name: "نظرمو عوض کن",
         image: "https://imgflip.com/s/meme/Change-My-Mind.jpg",
         ratio: 1.335,
         components: [
@@ -89,7 +89,7 @@ const templates = [
     },
     {
         id: "6",
-        name: "Left-Exit-12-Off-Ramp",
+        name: "خروج از راست",
         image: "https://imgflip.com/s/meme/Left-Exit-12-Off-Ramp.jpg",
         ratio: 1.048,
         components: [
@@ -103,7 +103,7 @@ const templates = [
     },
     {
         id: "7",
-        name: "Buff-Doge-vs-Cheems",
+        name: "سگ بوف vs چیم",
         image: "https://imgflip.com/s/meme/Buff-Doge-vs-Cheems.png",
         ratio: 1.3,
         components: [
@@ -117,7 +117,7 @@ const templates = [
     },
     {
         id: "8",
-        name: "Expanding-Brain",
+        name: "گسترش مغز",
         image: "https://imgflip.com/s/meme/Expanding-Brain.jpg",
         ratio: 0.712,
         components: [
@@ -131,7 +131,7 @@ const templates = [
     },
     {
         id: "9",
-        name: "Monkey-Puppet",
+        name: "میمون عروسکی",
         image: "https://imgflip.com/s/meme/Monkey-Puppet.jpg",
         ratio: 1,
         components: [
@@ -145,7 +145,7 @@ const templates = [
     },
     {
         id: "10",
-        name: "Sad-Pablo-Escobar",
+        name: "پابلو اسکوبار ناراحت",
         image: "https://imgflip.com/s/meme/Sad-Pablo-Escobar.jpg",
         ratio: 1,
         components: [
@@ -159,7 +159,7 @@ const templates = [
     },
     {
         id: "11",
-        name: "Anakin Padme 4 Panel",
+        name: "... بوده؟ نبوده؟",
         image: "https://i.imgflip.com/5c7lwq.png",
         ratio: 1,
         components: [

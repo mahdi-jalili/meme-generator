@@ -77,7 +77,7 @@ button:hover {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--line);
-  border-radius: 20px;
+  border-radius: var(--radius);
   border: 6px solid transparent;
   background-clip: content-box;
 }
